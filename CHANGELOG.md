@@ -4,6 +4,20 @@ All notable changes to this project are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] – Energyland audit
+
+Audit del fork Energyland (nessuna modifica al codice di terzi).
+
+- `pytest`: 27 test passati; l'unico errore (`test_protocol`, fixture `project` mancante) è un artefatto di
+  raccolta: `tests/test_pipeline.py` è uno script lanciato dalla CI con `python`, e pytest raccoglie la
+  funzione importata `test_protocol`. Lo script termina correttamente.
+- `ruff check` e `mypy`: nessun errore.
+- Percorsi assoluti o del PC (`~/`): solo in documentazione ed esempi come percorsi standard di terzi
+  (config di Claude Desktop, `~/.ssh`, cache di `mcp-publisher`); nessuna correzione necessaria.
+- Dati riservati (IP, email, token): nessuno; solo segnaposto (`YOUR_USER`, indirizzi `git@github.com`).
+- Nomi di cantiere o clienti Energyland: nessuno.
+- README: aggiunta la sezione "Energyland fork"; licenza MIT mantenuta.
+
 ## [Unreleased]
 
 ### Fixed
