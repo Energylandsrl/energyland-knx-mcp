@@ -403,6 +403,14 @@ nickol-knx-mcp/
 Testers and contributors are very welcome — especially **real-project test reports**. See
 [CONTRIBUTING.md](CONTRIBUTING.md) and the [issue templates](.github/ISSUE_TEMPLATE).
 
+## Energyland fork
+
+Questo repository è il fork interno di Energyland Srl di
+[nickol-knx-mcp](https://github.com/NickoScope/nickol-knx-mcp) (Nikolay Miroshnichenko).
+Rispetto all'originale cambia solo il perimetro di lavoro: audit di test, lint e tipi, controllo di
+percorsi e dati riservati, `CLAUDE.md` di progetto e questa documentazione. Il codice di terzi non è stato
+rifattorizzato. La licenza resta MIT, con il copyright originale (vedi [LICENSE](LICENSE)).
+
 ## License
 
 [MIT](LICENSE) © 2026 Nikolay Miroshnichenko
